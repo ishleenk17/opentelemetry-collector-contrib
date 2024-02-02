@@ -1,4 +1,4 @@
-module github.com/tommyers-elastic/opentelemetry-collector-contrib/processor/elasticprocessor
+module github.com/ishleenk17/opentelemetry-collector-contrib/processor/elasticprocessor
 
 go 1.21.1
 
