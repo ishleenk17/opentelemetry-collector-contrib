@@ -35,7 +35,7 @@ func (p *ElasticProcessor) processMetrics(_ context.Context, md pmetric.Metrics)
 			if p.cfg.AddSystemMetrics {
 				if strings.HasPrefix(scopeMetric.Scope().Name(), "otelcol/hostmetricsreceiver") {
 					if err := hostmetrics.AddElasticSystemMetrics(scopeMetric, rm, p.storage); err != nil {
-						p.logger.Error("error adding hostmetrics data", zap.Error(err))
+						p.logger.Error("error adding the hostmetrics data", zap.Error(err))
 					}
 				}
 			}
